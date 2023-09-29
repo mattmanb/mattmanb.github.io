@@ -1,0 +1,128 @@
+body {
+  background-color: #222831;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.row {
+  display: flex;
+}
+/* Header has all my bio info; its the parent div  */
+#header {
+  background-color: #393e46;
+  width:45%;
+  font-size:larger;
+  height:auto;
+  margin-left:3%;
+  padding:5px;
+}
+#header > img {
+  width:20%;
+  margin-left:10%;
+  margin-top:5%;
+  margin-bottom:5%;
+}
+a, a:visited {
+  color:#f96d00;
+}
+a:hover{
+  background-color: #f2f2f2;
+}
+h2 {
+  color:#f96d00;
+}
+.text {
+  color: #f2f2f2;
+}
+.emph {
+  color:#f96d00;
+  font-weight: bold;
+  font-size:x-large;
+}
+#red {
+  color:red;
+  background-color: #f2f2f2;
+}
+#blue {
+  color:blue;
+  background-color: #f2f2f2;
+}
+#ME {
+  width:40%;
+  margin-left:7%;
+  text-align: center;
+}
+#ME > img {
+  width:100%;
+  height:auto;
+  max-height: 750px;
+  max-width: 750px;
+}
+#ME > p {
+  color: #f2f2f2;
+  font-size: large;
+}
+#Q3{
+  margin-top:25px;
+  width:50%;
+  display:flex;
+}
+#Q3 > a{
+  color:#f2f2f2;
+  text-decoration: underline;
+}
+#Q3 > a:hover{
+  background-color: #f96d00;
+}
+#portfolio {
+  background-color: #393e46;
+  width:45%;
+  margin-left:1%;
+}
+#portfolio > img {
+  width:100%;
+}
+#articles {
+  background-color: #393e46;
+  width:45%;
+  margin-left:8%;
+}
+#articles > img {
+  width:100%;
+}
+#socials{
+  background-color: #393e46;
+  margin-left:2%;
+  margin-top:25px;
+  width:45%;
+  text-align: center;
+  font-size: x-large;
+}
+#socials > a:hover{
+  color:#f2f2f2
+}
+.header_icons{
+  width:7%;
+}
+#contact_me{
+  color:#f2f2f2;
+  background-color: #393e46;
+  width:50%;
+  margin-left:22%;
+  margin-top:25px;
+  padding:3%;
+  text-align: center;
+  font-size: x-large;
+}
+input {
+  background-color: #f2f2f2;
+  color:#222831;
+  font-size:x-large;
+}
+#message {
+  font-size: larger;
+  height:100px;
+  width:300px;
+}
+#submit{
+  background-color: #222831;
+  color: #f96d00;
+}

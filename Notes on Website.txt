@@ -1,0 +1,27 @@
+Website Notes
+
+1. Add all my code to github
+	Desc: Make a repository for each category i.e. Data Structures for 240
+		  assignments, 249 assignments (already created!), 431 assignments, 
+		  etc.
+2. Format a table-like portfolio page. Each "project" is a table cell. 
+3. Create an easy way to add a github icon to calculator project (and for
+   future projects in HTML/JS/CSS)
+4. Add CSS classes for the entire website
+
+Notes on bio:
+
+Whats in it for the visitor?
+Get people to take action.
+Position your expertise.
+
+Start with a great opening line:
+At [business] 
+I help [target client] 
+to achieve [result].
+
+"People don't buy what you do, they buy why you do it" -Simon Sinek
+
+
+
+About me:

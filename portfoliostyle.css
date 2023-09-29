@@ -1,0 +1,100 @@
+body{
+    font-family: "Courier New", Courier, monospace;
+    height: 100%;
+}
+
+@media (max-width:1200px){
+    body{background:black}
+}
+
+@media (min-width:1201px){
+    body{background-image:url(Images/galaga.png);
+    background-size: 100%;}
+}
+
+#portfolio_header {
+    border: 3px navy solid;
+    background-color: grey;
+    color:darkblue;
+    text-align: center;
+    margin:auto;
+    width:90%;
+}
+
+#portfolio_body {
+    background-color: transparent;
+    display:table;
+    border-spacing: 50px;
+    margin:auto;
+    margin-top: 30px;
+}
+
+.project {
+    display: table-cell;
+    height:500px;
+    border: 5px #a28089 dashed;
+    background-color: rgb(255, 255, 255, .5);
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    background-size: cover;
+    opacity: .75;
+}
+
+.project:hover{
+    opacity: 1;
+    border: 5px #a0d2eb dashed;
+}
+
+.row {
+    display:table-row;
+    height: 250px;
+}
+
+.project_name{
+    color:#8458B3;
+    background-color: black;
+    width: 100%;
+    margin:auto;
+    margin-top:10px;
+}
+
+.project_desc{
+    color:#d0bdf4;
+    background-color: black;
+    font-size: 15px;
+    width:100%;
+    margin: auto;
+    margin-top:10px;
+}
+
+#calculator {
+    background-image: url(Images/calculator.JPG);
+}
+
+#MERN_movie {
+    background-image: url(Images/MERN_movie.JPG);
+}
+
+#OOP_projects {
+    background-image: url(Images/OOP.jpg);
+}
+
+#Data_structures {
+    background-image: url(Images/Data_structs.jpg);
+}
+
+#Programming_languages {
+    background-image: url(Images/Programming_langs.JPG);
+}
+
+#Discrete_Cryptography {
+    background-image: url(Images/Discrete_Cryptography.jpg);
+}
+
+#Software_docs {
+    background-image: url(Images/Brave\ Guide.JPG);
+}
+
+

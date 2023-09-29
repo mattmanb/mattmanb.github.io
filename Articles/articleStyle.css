@@ -1,0 +1,15 @@
+#actual_article{
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.title {
+    color:black;
+    text-align: center;
+}
+.text {
+    color:black;
+}
+#author_date {
+    color:black;
+    font-weight: bold;
+}
