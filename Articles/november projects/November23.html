@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html id="actual_article">
+    <head>
+        <link rel="stylesheet" href="nove.css">
+    </head>
+    <body>
+        <h1 class="title">My November Projects</h1>
+        <p>
+            By: Matthew Barrington<br>
+            Date: December 5th, 2023<br>
+        </p>
+
+        <p>I have had an exciting month of learning this November. I worked on several interesting projects, and have learned about a lot of new topics. Until now I've been learning the basics, but now I'm really diving into the weeds of computer science.</p>
+        <h1>Advancements in Machine Learning</h1>
+        <p>Machine learning is a concept in Computer Science that basically “teaches” a program, or model, how to recognize patterns, then act on these patterns. Machine learning is ubiquitous in e-commerce, social media, sports, and countless other industries. It allows us to perform computations on data at a rate that was previously impossible. Out of all the concepts in computer science, machine learning is the most interesting to me right now. </p>
+        <h2>Applied Machine Learning Topics</h2>
+        <p>The result of ‘training’ a machine learning model depends heavily on the parameters and data passed into the model when training. The term “machine learning model” is very abstract, since there are many ways to train one. One relevant example is a “neural network.” 
+        <h3>Neural Networks</h3> 
+        <p>Neural networks simulate the human brain on a much more simple and controlled scale. There is input, and output to a neural network, with many layers hidden of ‘neurons’ in between the start and finish line. These hidden layers perform operations, or changes to the inputs. Each individual neuron performs the operation on its input, and there are several neurons per layer typically. Upon completion, the output will give us information depending on the problem.</p>
+        <figure>
+            <img src="NN.gif" alt="Image of a neural network">
+            <figcaption>Neural Network visualization</figcaption>
+            <a href="https://towardsdatascience.com/visualizing-artificial-neural-networks-anns-with-just-one-line-of-code-b4233607209e" target="_blank">Article about visualizing neural networks</a>
+        </figure>
+        <h3>Detection using Neural Networks</h3> 
+        <p>Many trained neural networks exist that can actually detect objects in an image that is passed in as input. Passing an image into a neural network might allow the model to classify, detect, or modify the image based on its attributes. One example of a neural network that I've used and draws boxes around objects it detects is called “YOLOv5.” YOLO develops some of the latest and greatest models in object detection, and I used one of their models to train my very own neural network.</p>
+        <figure>
+            <video loop autoplay>
+                <source src="yolovid.mp4" type="video/mp4">
+                Your browser does not support this video
+            </video>
+            <figcaption>Yolov5 object detection</figcaption>
+            <a href="https://github.com/ultralytics/yolov5" target="_blank">Github Repository for Yolov5</a>
+        </figure>
+        <h2>Project in Machine Learning - White/Red Blood Cell Detection</h2>
+        <p>Using Tensorflow’s “bccd” dataset, I trained a YOLOv8 model to detect white blood cells, red blood cells, and platelets. The model will take in an image as input, then return the image with boxes drawn around the cells and a label tag as output. See the image to see how my model did.</p>
+        <figure>
+            <img src="bccd labels example.png" alt="picture predicting white/red bloodcells and platelets">
+            <figcaption>Example output for my blood cell detection program</figcaption>
+        </figure>
+        <h1>Software Development Project</h1>
+        <p>One of my projects this semester was to develop a large-scale project such as Battleship, Risk, or in my case, Monopoly. The software development class was divided up into three groups, each assigned a board game. My group and I got assigned Monopoly. I want to go into some of the details of what this project involves. Long story short, it's one of the more challenging things I’ve ever done, but very satisfying.</p>
+        <h2>Working With My Team</h2>
+        <p>My group consists of five members, and I volunteered to lead the project. The first task we had as a group was choosing the tech stack we wanted to use. After some discussion, we went with vanilla HTML/CSS/JavaScript. Then, we began to designate roles to each group member so the project was more digestible for each member. The parts I went with were front-end design (assigned to two group members), game logic, game data, and backend management. I was the designated backend person, but since some of my group members weren’t super familiar with the tech stack we chose, I would help out in different departments. </p>
+        <figure>
+            <img src="Monopolytech Board.png" alt="Image of a monopoly board using HTML">
+            <figcaption>This is how our board looks right now</figcaption>
+        </figure>
+        <h2>Creating Connections</h2>
+        <p>I believe this project has taught me one thing more than anything else - how to manage connections. I had never worked on a project that involved a server where several users would connect to, so I knew I had to start by familiarizing myself with how a backend server might communicate with a front end application. I learned this by following a Youtube tutorial that actually creates a multiplayer shooter game. This project was a great introduction to having a backend server communicate with the client. While I never finished this project, I gained a level of familiarity with a Javascript library called “socket.io” that helped me create a viable implementation of Monopoly. While I created connections to a server, I feel I also made connections with my group-mates. It is fun to work in a team, and one might even argue more satisfying. Having several separate puzzle pieces to fit in place is an exhilarating feeling.</p>
+        <h1>My Personal Learning Curve</h1>
+        <p>I have found the more immersed into the Computer Science field I get, the more ignorant I feel. In a way, Computer Science feels like a glacier. From an outside perspective you think of coding, or the internet and maybe security. When you actually dive into it, you start to see how every little thing might work, and that learning ALL of computer science is becoming more and more challenging because of its exponential growth. Here are some of the things I began learning this month.</p>
+        <h2>CS50</h2>
+        <p>CS50 is the intro computer science course at Harvard. This course solidified my basic understanding of concepts like data structures, sorting, C, and the coding process. It taught me how to create a server/client connection and link the server to a database as well. Professor Malan emphasizes that you will make mistakes, and that debugging your code will likely be a larger part of your coding experience than coding itself. The problem sets associated with the class are also available through the CS50 website. They offer great exercises in the topics you learn throughout CS50, and I really enjoyed doing them. I never would have expected to enjoy doing assignments that no one will ever see and aren't mandatory.</p>
+        <h2>Databases</h2>
+        <p>Working with databases is a skill that should not be taken for granted. Working and interpreting data is impossible without data storage and methods to access that data. Finding optimized ways to manage information streams and act upon patterns is very interesting to me, and very relevant in the world we find ourselves. </p>
+        <figure>
+            <img src="Infocom Screenshot.png" alt="My user interface for a database access application">
+            <figcaption>A UI I created using python libraries to connect to a database under a given role and perform "CRUD" operation on tables</figcaption>
+        </figure>
+        <h2>Operating Systems</h2>
+        <p>There is so much going on under the hood of a computer, and the fact that operating systems are as advanced as they are today amazes me. I am excited to see how agent-based operating systems that apply AI to a computer's operating system will revolutionize how people use their computers. I also see data storage moving to the cloud so we don’t necessarily need to store anything locally. Threading, multiprocessing, interprocess communication, and deadlock are some of my favorite concepts in operating systems.</p>
+        <figure>
+            <img src="OS.gif" alt="Gif of different parts of a computer working together"><br>
+            <a href="https://www.nytimes.com/2021/07/07/technology/personaltech/windows-11-test-drive.html">Taking Microsoft’s Windows 11 for a Test Drive</a>
+        </figure>
+        <h1>The Future</h1>
+        <p>I am very excited to see changes in the fields of data and computer science. We see new exciting changes with AI every day, and cloud computing/data storage is becoming increasingly relevant. The way the world operates will be a result of advancements in computer science, and I am eager to make some of those advancements myself.</p>
+    </body>
+</html>
