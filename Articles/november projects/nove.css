@@ -20,6 +20,9 @@ p, figcaption {
     color:white;
     width:90%;
 }
+figcaption {
+    max-width: 500px;
+}
 a {
     color:gray;
 }
