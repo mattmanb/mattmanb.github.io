@@ -50,6 +50,17 @@ li:hover{
     background-color: #a2a8d3;
     cursor:pointer;
 }
+a{
+    display:block;
+    color:#e7eaf6;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: large;
+}
+a:hover{
+    background-color: #a2a8d3;
+    cursor:pointer;
+}
 .active{
     background-color: #e7eaf6;
     color:#113f67;
