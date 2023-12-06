@@ -61,6 +61,9 @@ a:hover{
     background-color: #a2a8d3;
     cursor:pointer;
 }
+a:visited {
+    color:#e7eaf6;
+}
 .active{
     background-color: #e7eaf6;
     color:#113f67;
