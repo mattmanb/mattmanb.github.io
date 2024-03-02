@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+}
+h1 {
+    color:#113f97;
+}
+h2 {
+    color:#38598b;
+}
+h3 {
+    color:#a2a8d3;
+}
+h4  {
+    color: green;
+}
+h5 {
+    color:blue;
+}
+p, figcaption {
+    color:white;
+    width:90%;
+}
+figcaption {
+    max-width: 500px;
+}
+a {
+    color:gray;
+}
+a:hover{
+    color:red;
+}
+img, video {
+    max-height: 300px;
+    max-width:500px;
+    border:5px solid white
+}
+em {
+    color:#e7eaf6;
+}
+strong {
+    color: #113f97;
+    background-color: white;
+}
+footer{
+    color: white;
+    font-size: small;
+    width: 500px;
+}

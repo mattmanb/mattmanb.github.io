@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html id="actual_article">
+    <head>
+        <link rel="stylesheet" href="catanomics0.css">
+    </head>
+    <body>
+        <h1 class="title">My November Projects</h1>
+        <p>
+            By: Matthew Barrington<br>
+            Date: March 2nd, 2023<br>
+        </p>
+
+        <h1>Catanomics - The Math Behind Catan's Popularity</h1>
+        <p><em>Catan</em> is one of the most popular board games around the world, and that is partially due to math! Let me explain. <em>Catan</em> is a game of probability, one where you must examine several different possibilities and choose the route that will maximize your chances of winning. These possibilities exist all over the board, so I'll break it up into different sections... </p>
+
+        <h2>Setup - Why is Catan so Replayable?</h2>
+        <p>A huge reason <em>Catan</em> is so well liked is its replayability. Every time you play a game of <em>Catan</em>, it is almost guaranteed to be a different setup (unless you follow one of the pre-made setups). So, how many setups of <em>Catan</em> actually exists? Well, there is a method to calculating that using probability. Here is where the math begins! </p>
+
+        <p>In a regular <em>Catan</em> board, there are 19 hexes on the board that can be placed in any order. That means, if each hex were completely unique, there would be 19! (19 * 18 * 17 *... * 1), which equals 121,645,100,408,832,000. This number is about one-hundred and twenty-one <strong>quadrillion</strong>. In order to play all of these variations, you would have needed to go to the beginning of when our universe began over thirteen billion years ago, then somehow play over 24,000 games of <em>Catan</em> every single day up to now. </p>
+        <img src="board.png">
+        <p>This calculation isn't fully accurate, however, since not all 19 of the <em>Catan</em> tiles are unique. These repetition happen because there are only 6 resources for all 19 hexes - 3 brick tiles, 3 ore tiles, 4 wheat tiles, 4 sheep tiles, 4 wood tiles, and a single desert tile. This means that if the board stays the same and only brick tiles are moved around, then that counts as one of the possibilities described before, despite being the same exact setup. That won't do. </p>
+
+        <p>To account for these repetitions, we must calculate how many possible repetitions there are in this way, which is 3! * 3! * 4! * 4! * 4! * 1! which equals 497,664. This was calculated by taking the number of each hex type, calculating the amount of ways it can be rearranged (3 or 4 factorial), then multiplying the number of possibilities for each resource type. To eliminate these repetitions, this number must be divided out of the original 19!:
+
+        <p>121,645,100,408,832,000 / 497,664 = 244,432,188,000 </p>
+
+        <p>We're in the billions! However, there are still a lot more variations. This calculation only accounts for the layout of the <em>tiles</em>. Now, the number of variations of tiles needs to be multiplied by the number of variations of the <em>numbers</em>. There are 18 different numbers that are placed on 18 out of 19 of the hex tiles (none on the desert hex). There is one 2 and one 12, then two of everything in between <em>except</em> 7, which adds up to 18 numbers on the board. For each board, if each number was unique, there would be 18! possibilities, but a lot of the numbers can be switched with their twin (such as swapping the two 6's). Here is the true number of possibilities for different number variations: </p>
+        <img src="numbers.png">
+        <p>18! / (1! * 2! * 2! * 2! * 2! * 1! * 2! * 2! * 2! * 2!) = 12,504,636,144,000 </p>
+
+        <p>That is even larger than the number of hex possibilities! In order to get a more accurate number of setup variations, the possible number of tile layouts must be multiplied by the possible number of number layouts: </p>
+
+        <p>12,504,636,144,000 * 244,432,188,000 = 3,056,535,572,821,803,072,000,000 </p>
+
+        <p>This has to be the end... right? Wrong. The <em>ports</em> on the edges of the board haven't been accounted for. There are six different port types: one for each resource, and four 3 to 1 ports. Thankfully the locations of the ports themselves don't change, but the resource types can. There are 9 ports total, so in order to do this calculation, we must account for multiple 3:1 ports. Otherwise, its a straight-forward calculation: </p>
+        <img src="ports.png">
+        <p>9! / (4!) = 15,120 </p>
+
+        <p>Now this number gets multiplied by the number found before, and we have the true number of different possible Catan games! </p>
+
+        <p>3,056,535,572,821,803,072,000,000 * 15,120 = 46,214,817,861,065,662,448,640,000,000 </p>
+
+        <p>I would describe that number in words but it is hard to do so. The number is about <strong>forty-six octillion</strong>. This number is so tremendously large that our small human brains can't comprehend it. But just for reference, if you played 1 billion games of <em>Catan</em> every second since the beginning of the universe (about 13.7 billion years ago), then you would have played about 1% of the possible variations. That is all to say you played a billion games within 1 second, which isn't feasible since <em>Catan</em> takes anywhere between 20 to 45 minutes to play. </p>
+
+        <p>All of these calculations are meant to show that the <em>replayability</em> of <em>Catan</em> is out of this world! With the number of variations, it is easy to play several games and have each one feel completely different than the last. </p>
+
+        <h2>Placement - Decisions, decisions</h2> 
+        <p>The most important decision you make in a game of <em>Catan</em> is where you place your starting settlements. This determines what resources you will have access to and really sets the course for the entire game. There is trading to account for, but any good <em>Catan</em> player would tell you that relying on trading will not work in your favor. </p>
+        <img src="settlement.png">
+        <h3>Resource Variation</h3>
+        <p>When placing your starting settlements, there are several important things to consider. The first being the number of resources you'll be producing. It wouldn't be smart to place a settlement on a spot where only sheep gets produced. In order to build and expand in <em>Catan</em>, you need a variety of resources. </p>
+        <img src="goodvsbadplacement.png">
+        <h3> Probability </h3>
+        <p>Another vital aspect of placing settlements is accounting for the numbers that lie on each of your tiles. One might think that rolling two six-sided die could yield an equal frequency for each number from 2 through 12, but that is incorrect. There are several ways for two dice to add up to six, seven, or eight, making those three numbers the most common rolls with two dice. On the other hand, there is only one way for a 2 or a 12 to be rolled, making them much less frequent. To give a visual image of the frequency of two six-sided dice rolls, I simulated 1000 2-sided dice rolls, then plotted the frequency of each sum. </p>
+        <img src="two_dice.png">
+        <footer>You can see that this looks like a <em>normal distribution</em>, where the frequency of sums in the center of the outcomes is the highest, and the frequencies go down depending on how far from the center they are.</footer>
+        <p>The probability of rolling each number is the number of dots shown on the number times 1/36. Since the 2 tile has 1 dot, the probability of rolling a 2 is 1/36. Here is the probability of rolling each sum with two six-sided die:</p>
+        <img src="two.png">    
+        <p>2- 1/36 <br>
+            3- 2/36<br>
+            4- 3/36<br>
+            5- 4/36<br>
+            6- 5/36<br>
+            7- 6/36<br>
+            8- 5/36<br>
+            9- 4/36<br>
+            10- 3/36<br>
+            11- 2/36<br>
+            12- 1/36</p>
+
+        <p>To rope this in with starting settlements, you'll want to maximize the probability that you will get numbers, while also diversifying what resources you get. This intuition comes with the more <em>Catan</em> games you play, but you start to see patterns in where the best starting positions are. </p>
+
+        <h3>Other factors</h3>
+        <p>There are a few other factors to account for when starting a game of <em>Catan</em>, like where your opponents are placing settlements, where the ports are, what resources are really low in production, and some other smaller things that don't make a big impact.</p>
+
+        <p>If you see your opponent has a really good settlement spot to complement their first, it may be a good idea to prevent them from going there. Having a starting position with great productivity and resource variability is something no <em>Catan</em> player likes to see unless its their own setup. </p>
+
+        <p>Ports are crucial on some boards. If production of a resource (usually brick or ore) is really low, then a port can be a life-saver. Brick and ore have less production than all other resources on average because there are only three hexes instead of four. </p>
+
+        <h1>A Game of Numbers</h1>
+        <p>Everything described thus far has to do with the <strong>very beginning</strong> of a <em>Catan</em> game. The numbers aren't as definite after the game begins, so a combination of intuition and quick math is what will bring you closest to victory after setup. While it is possible to make calculations given a board setup after the start, the math is much more complicated, and would be most effective if computed using software. This gets into a whole new territory of <em>Catan</em> that can bring to light some interesting patterns. I haven't seen any conclusive data or evidence pointing toward an optimal way to play <em>Catan</em>, but I think with the rise of AI and machine learning, the data can change the game forever.</p>
+        <img src="ai.gif">
+        <p>Thanks for reading!</p>
+
+        <p>Recommended resources: 
+            <ul>
+                <li><a href="https://youtu.be/tyY8n73P9AI?si=60m1-gYqJT_hNKHh" target="_blank">DyLighted Catan gameplay</a></li>
+                <li><a href="https://www.commercient.com/tag/artificial-intelligence/" target="_blank">The Impact of AI on Customer Journey Mapping</a></li>
+                <li><a href="https://www.youtube.com/watch?v=KuXjwB4LzSA" target="_blank">Convolution (two 6-sided dice rolling)</a></li>
+            </ul>
+        </p>
+
+    </body>
